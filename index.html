@@ -3,87 +3,205 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Meu Portfólio</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <!-- Cabeçalho / Menu -->
     <header class="navbar">
-        <div class="logo">Érick Ruan Winter<span>.</span></div>
+
+        <div class="logo">
+            Érick Ruan Winter<span>.</span>
+        </div>
+
         <nav>
             <ul class="nav-links">
-                <li><a href="#inicio" class="active">Início</a></li>
-                <li><a href="projetos.html">Projetos</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#contato">Contato</a></li>
+
+                <li>
+                    <a href="#inicio" class="active">
+                        Início
+                    </a>
+                </li>
+
+                <li>
+                    <a href="projetos.html">
+                        Projetos
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contato">
+                        Contato
+                    </a>
+                </li>
+
             </ul>
         </nav>
+
     </header>
 
     <!-- Seção Principal -->
     <main class="hero" id="inicio">
+
         <div class="hero-content">
-            <p class="subtitle">Olá, eu sou</p>
-            <h1 class="title">Desenvolvedor <span>iniciante</span></h1>
-            <p class="description">Construindo experiências digitais modernas, limpas e focadas em performance.</p>
+
+            <p class="subtitle">
+                Olá, eu sou
+            </p>
+
+            <h1 class="title">
+                Desenvolvedor <span>iniciante</span>
+            </h1>
+
+            <p class="description">
+                Construindo experiências digitais modernas, limpas e focadas em performance.
+            </p>
+
             <div class="cta-buttons">
-                <!-- ALTERADO: Agora aponta para a nova página de projetos -->
-                <a href="projetos.html" class="btn-primary">Ver Projetos</a>
-                <a href="#contato" class="btn-secondary">Fale Comigo</a>
+
+                <a href="projetos.html" class="btn-primary">
+                    Ver Projetos
+                </a>
+
+                <a href="#contato" class="btn-secondary">
+                    Fale Comigo
+                </a>
+
             </div>
+
         </div>
+
     </main>
-        <!-- Seção de Contato -->
+
+    <!-- Seção de Contato -->
     <section class="contact-section" id="contato">
+
         <div class="contact-container">
-            
-            <!-- Lado Esquerdo: Redes Sociais -->
+
+            <!-- Informações de contato -->
             <div class="contact-info">
-                <h2 class="contact-title">Fale <span>Comigo</span></h2>
-                <p class="contact-description">Estou disponível para novos projetos, oportunidades ou apenas para trocar uma ideia sobre desenvolvimento.</p>
-                
-                <div class="social-links">
-                    <!-- Substitua o número pelo seu WhatsApp real (com DDD) -->
-                    <a href="https://wa.me" target="_blank" class="social-btn whatsapp">
-                        WhatsApp 45-999875888
-                    </a>
-                    <!-- Substitua pelo seu usuário do Instagram -->
-                    <a href="https://instagram.com" target="_blank" class="social-btn instagram">
-                        Instagram
-                    </a>
+
+                <h2 class="contact-title">
+                    Fale <span>Comigo</span>
+                </h2>
+
+                <p class="contact-description">
+                    Estou disponível para novos projetos, oportunidades ou apenas para trocar uma ideia sobre desenvolvimento.
+                </p>
+
+                <!-- Contatos apenas para visualização -->
+                <div class="contact-details">
+
+                    <div class="contact-item whatsapp">
+
+                        <span class="contact-label">
+                            WhatsApp
+                        </span>
+
+                        <span class="contact-value">
+                            (45) 99987-5888
+                        </span>
+
+                    </div>
+
+                    <div class="contact-item instagram">
+
+                        <span class="contact-label">
+                            Instagram
+                        </span>
+
+                        <span class="contact-value">
+                            @erickk_rw
+                        </span>
+
+                    </div>
+
                 </div>
+
             </div>
 
-            <!-- Lado Direito: Formulário (Formspree) -->
+            <!-- Formulário conectado ao Formspree -->
             <div class="contact-form-container">
-                <!-- Espaço reservado para o Formspree: basta colocar seu ID no local indicado depois -->
-                <form action="https://formspree.io" method="POST" class="contact-form">
+
+                <form
+                    action="https://formspree.io/f/xwleewod"
+                    method="POST"
+                    class="contact-form"
+                >
+
                     <div class="form-group">
-                        <label for="name">Nome</label>
-                        <input type="text" id="name" name="name" required placeholder="Seu nome">
+
+                        <label for="name">
+                            Nome
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            required
+                            autocomplete="name"
+                            placeholder="Seu nome"
+                        >
+
                     </div>
-                    
+
                     <div class="form-group">
-                        <label for="email">E-mail</label>
-                        <input type="email" id="email" name="_replyto" required placeholder="seuemail@provedor.com">
+
+                        <label for="email">
+                            E-mail
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required
+                            autocomplete="email"
+                            placeholder="seuemail@provedor.com"
+                        >
+
                     </div>
-                    
+
                     <div class="form-group">
-                        <label for="message">Mensagem</label>
-                        <textarea id="message" name="message" rows="5" required placeholder="Como posso ajudar você?"></textarea>
+
+                        <label for="message">
+                            Mensagem
+                        </label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="5"
+                            required
+                            placeholder="Como posso ajudar você?"
+                        ></textarea>
+
                     </div>
-                    
-                    <button type="submit" class="btn-submit">Enviar Mensagem</button>
+
+                    <button type="submit" class="btn-submit">
+                        Enviar Mensagem
+                    </button>
+
                 </form>
+
             </div>
 
         </div>
+
     </section>
 
     <!-- Rodapé -->
     <footer class="footer">
-        <p>&copy; 2026 Érick Ruan Winter. Todos os direitos reservados.</p>
+
+        <p>
+            &copy; 2026 Érick Ruan Winter. Todos os direitos reservados.
+        </p>
+
     </footer>
 
 </body>
