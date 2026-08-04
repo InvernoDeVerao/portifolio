@@ -1,11 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Meu Portfólio</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
+    <!-- Informações principais do site -->
+    <title>Portfólio | Érick Ruan Winter</title>
+
+    <meta
+        name="description"
+        content="Portfólio pessoal de Érick Ruan Winter, com projetos desenvolvidos em HTML, CSS e JavaScript."
+    >
+
+    <meta name="author" content="Érick Ruan Winter">
+
+    <!-- Endereço principal do site -->
+    <link
+        rel="canonical"
+        href="https://portifolio-3tj.pages.dev"
+    >
+
+    <!-- Prévia para LinkedIn, WhatsApp e outras redes sociais -->
+    <meta property="og:type" content="website">
+
+    <meta
+        property="og:title"
+        content="Portfólio | Érick Ruan Winter"
+    >
+
+    <meta
+        property="og:description"
+        content="Conheça meus projetos e acompanhe minha evolução no desenvolvimento web."
+    >
+
+    <meta
+        property="og:url"
+        content="https://portifolio-3tj.pages.dev"
+    >
+
+    <meta
+        property="og:site_name"
+        content="Portfólio de Érick Ruan Winter"
+    >
+
+    <meta
+        property="og:image"
+        content="https://portifolio-3tj.pages.dev/Fotos/portfolio-preview.png"
+    >
+
+    <meta
+        property="og:image:secure_url"
+        content="https://portifolio-3tj.pages.dev/Fotos/portfolio-preview.png"
+    >
+
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <meta
+        property="og:image:alt"
+        content="Prévia do portfólio de Érick Ruan Winter"
+    >
+
+    <!-- Arquivo CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -18,7 +80,8 @@
             Érick Ruan Winter<span>.</span>
         </div>
 
-        <nav>
+        <nav aria-label="Navegação principal">
+
             <ul class="nav-links">
 
                 <li>
@@ -40,11 +103,12 @@
                 </li>
 
             </ul>
+
         </nav>
 
     </header>
 
-    <!-- Seção Principal -->
+    <!-- Seção principal -->
     <main class="hero" id="inicio">
 
         <div class="hero-content">
@@ -63,11 +127,17 @@
 
             <div class="cta-buttons">
 
-                <a href="projetos.html" class="btn-primary">
+                <a
+                    href="projetos.html"
+                    class="btn-primary"
+                >
                     Ver Projetos
                 </a>
 
-                <a href="#contato" class="btn-secondary">
+                <a
+                    href="#contato"
+                    class="btn-secondary"
+                >
                     Fale Comigo
                 </a>
 
@@ -77,7 +147,7 @@
 
     </main>
 
-    <!-- Seção de Contato -->
+    <!-- Seção de contato -->
     <section class="contact-section" id="contato">
 
         <div class="contact-container">
@@ -93,7 +163,7 @@
                     Estou disponível para novos projetos, oportunidades ou apenas para trocar uma ideia sobre desenvolvimento.
                 </p>
 
-                <!-- Contatos apenas para visualização -->
+                <!-- Contatos somente para visualização -->
                 <div class="contact-details">
 
                     <div class="contact-item whatsapp">
@@ -132,6 +202,13 @@
                     method="POST"
                     class="contact-form"
                 >
+
+                    <!-- Assunto que aparecerá no e-mail -->
+                    <input
+                        type="hidden"
+                        name="_subject"
+                        value="Nova mensagem pelo portfólio"
+                    >
 
                     <div class="form-group">
 
@@ -183,7 +260,10 @@
 
                     </div>
 
-                    <button type="submit" class="btn-submit">
+                    <button
+                        type="submit"
+                        class="btn-submit"
+                    >
                         Enviar Mensagem
                     </button>
 
@@ -205,4 +285,5 @@
     </footer>
 
 </body>
+
 </html>
